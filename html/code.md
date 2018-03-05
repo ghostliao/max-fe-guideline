@@ -70,13 +70,13 @@ HTML文本、CDATA、JavaScript、meta标签某些属性等内容可大小写混
 <!-- HTML文本内容 -->
 <h1>I AM WHAT I AM </h1>
 <!-- JavaScript 内容 -->
-<script type="text/javascript">
+<script>
 	var demoName = 'demoName';
 	...
 </script>
 	
 <!-- CDATA 内容 -->
-<script type="text/javascript"><![CDATA[
+<script><![CDATA[
 ...
 ]]></script>
 ```
@@ -177,4 +177,48 @@ HTML文本、CDATA、JavaScript、meta标签某些属性等内容可大小写混
 <p><div></div><div></div></p>
 ```
 
+## 资源引用协议
+
+> Use the HTTPS protocol for embedded resources where possible.
+
+优先使用 HTTPS 协议
+
+> Always use the HTTPS protocol (https:) for images and other media files, style sheets, and scripts, unless the respective files are not available over HTTPS.
+
+除非引用资源不支持 HTTPS 协议，图片、媒体文件、样式表和script脚本建议使用 HTTPS 协议
+
+```html
+<!-- 推荐 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<!-- 不推荐 -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+```
+
+```css
+/* 推荐 */
+.max {
+  background: url(https://www.google.com/images/example);
+}
+
+/* 不推荐 */
+.max {
+  background: url(http://www.google.com/images/example);
+}
+
+.max {
+  background: url(//www.google.com/images/example);
+}
+```
+
+移动环境或只针对现代浏览器设计的 Web 应用，如果引用外部资源的 URL 协议部分与页面相同，为方便在https和http之间切换（或为了避免网站改为https的情况下仍然访问http资源而无法访问的问题），可以省略协议前缀。
+
+```html
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+```
+
+参考：https://google.github.io/styleguide/htmlcssguide.html
 
