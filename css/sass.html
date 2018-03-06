@@ -1,0 +1,914 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>SASS 规范 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="reset.html" />
+    
+    
+    <link rel="prev" href="annotation.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../html/code.html">
+            
+                <a href="../html/code.html">
+            
+                    
+                    代码规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../html/annotation.html">
+            
+                <a href="../html/annotation.html">
+            
+                    
+                    注释规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../html/template.html">
+            
+                <a href="../html/template.html">
+            
+                    
+                    文件模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../html/webapp.html">
+            
+                <a href="../html/webapp.html">
+            
+                    
+                    WebApp Meta
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../image/">
+            
+                <a href="../image/">
+            
+                    
+                    图片规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../image/format.html">
+            
+                <a href="../image/format.html">
+            
+                    
+                    图片格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../image/size.html">
+            
+                <a href="../image/size.html">
+            
+                    
+                    图片大小
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../image/quality.html">
+            
+                <a href="../image/quality.html">
+            
+                    
+                    图片质量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../image/import.html">
+            
+                <a href="../image/import.html">
+            
+                    
+                    图片引入
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    CSS规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="code.html">
+            
+                <a href="code.html">
+            
+                    
+                    代码规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="annotation.html">
+            
+                <a href="annotation.html">
+            
+                    
+                    注释规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="sass.html">
+            
+                <a href="sass.html">
+            
+                    
+                    SASS 规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="reset.html">
+            
+                <a href="reset.html">
+            
+                    
+                    重置样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="query.html">
+            
+                <a href="query.html">
+            
+                    
+                    媒体查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="webkit.html">
+            
+                <a href="webkit.html">
+            
+                    
+                    移动端常用私有属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../name/">
+            
+                <a href="../name/">
+            
+                    
+                    命名规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../name/dir.html">
+            
+                <a href="../name/dir.html">
+            
+                    
+                    目录命名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../name/image.html">
+            
+                <a href="../name/image.html">
+            
+                    
+                    图片命名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../name/htmlcss.html">
+            
+                <a href="../name/htmlcss.html">
+            
+                    
+                    HTML/CSS 命名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../name/class.html">
+            
+                <a href="../name/class.html">
+            
+                    
+                    ClassName 命名
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../js/">
+            
+                <a href="../js/">
+            
+                    
+                    JS 规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../js/lang.html">
+            
+                <a href="../js/lang.html">
+            
+                    
+                    语言规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../js/code.html">
+            
+                <a href="../js/code.html">
+            
+                    
+                    代码规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../business/">
+            
+                <a href="../business/">
+            
+                    
+                    业务规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../business/security.html">
+            
+                <a href="../business/security.html">
+            
+                    
+                    安全性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../business/performance.html">
+            
+                <a href="../business/performance.html">
+            
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../business/experience.html">
+            
+                <a href="../business/experience.html">
+            
+                    
+                    体验优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >SASS 规范</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="sass-&#x89C4;&#x8303;">SASS &#x89C4;&#x8303;</h1>
+<h2 id="&#x8BED;&#x6CD5;&#x9009;&#x7528;">&#x8BED;&#x6CD5;&#x9009;&#x7528;</h2>
+<p>SASS&#x6709;&#x4E24;&#x79CD;&#x8BED;&#x6CD5;&#x683C;&#x5F0F;&#xFF0C;&#x4E00;&#x79CD;&#x662F; SCSS (Sassy CSS)&#xFF0C;&#x53E6;&#x4E00;&#x79CD;&#x662F;&#x7F29;&#x8FDB;&#x683C;&#x5F0F;&#xFF08;Indented Syntax&#xFF09;&#xFF0C;&#x6709;&#x65F6;&#x79F0;&#x4E4B;&#x4E3A; Sass&#x3002;</p>
+<h3 id="scss">SCSS</h3>
+<p>SCSS&#x8BED;&#x6CD5;&#x57FA;&#x4E8E; CSS &#x8BED;&#x6CD5;&#x6269;&#x5C55;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x6709;&#x6548;&#x7684; CSS &#x6587;&#x4EF6;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x6709;&#x6548;&#x7684;&#x5177;&#x6709;&#x76F8;&#x540C;&#x542B;&#x4E49;&#x7684; SCSS &#x6587;&#x4EF6;&#xFF0C;&#x6362;&#x79CD;&#x8BF4;&#x6CD5;&#x5C31;&#x662F; SCSS &#x80FD;&#x8BC6;&#x522B;&#x5927;&#x591A;&#x6570;&#x7684; CSS hacks &#x5199;&#x6CD5;&#x548C;&#x6D4F;&#x89C8;&#x5668;&#x524D;&#x7F00;&#x5199;&#x6CD5;&#x4EE5;&#x53CA;&#x65E9;&#x671F;&#x7684; IE &#x6EE4;&#x955C;&#x5199;&#x6CD5;&#xFF0C;&#x8FD9;&#x79CD;&#x683C;&#x5F0F;&#x4EE5; .scss &#x4F5C;&#x4E3A;&#x6269;&#x5C55;&#x540D;&#x3002;</p>
+<h3 id="sass">Sass</h3>
+<p>Sass &#x4F7F;&#x7528; &#x201C;&#x7F29;&#x8FDB;&#x201D; &#x4EE3;&#x66FF; &#x201C;&#x82B1;&#x62EC;&#x53F7;&#x201D; &#x8868;&#x793A;&#x5C5E;&#x6027;&#x5C5E;&#x4E8E;&#x67D0;&#x4E2A;&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x7528; &#x201C;&#x6362;&#x884C;&#x201D; &#x4EE3;&#x66FF; &#x201C;&#x5206;&#x53F7;&#x201D; &#x5206;&#x9694;&#x5C5E;&#x6027;&#xFF0C;&#x5F88;&#x591A;&#x4EBA;&#x8BA4;&#x4E3A;&#x8FD9;&#x6837;&#x505A;&#x6BD4; SCSS &#x66F4;&#x5BB9;&#x6613;&#x9605;&#x8BFB;&#xFF0C;&#x4E66;&#x5199;&#x4E5F;&#x66F4;&#x5FEB;&#x901F;&#x3002;&#x7F29;&#x8FDB;&#x683C;&#x5F0F;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; Sass &#x7684;&#x5168;&#x90E8;&#x529F;&#x80FD;&#xFF0C;&#x53EA;&#x662F;&#x4E0E; SCSS &#x76F8;&#x6BD4;&#x4E2A;&#x522B;&#x5730;&#x65B9;&#x91C7;&#x53D6;&#x4E86;&#x4E0D;&#x540C;&#x7684;&#x8868;&#x8FBE;&#x65B9;&#x5F0F;&#xFF0C;&#x53C2;&#x8003; <a href="http://sass-lang.com/documentation/file.INDENTED_SYNTAX.html" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a> &#x3002;&#x8FD9;&#x79CD;&#x683C;&#x5F0F;&#x4EE5; .sass &#x4F5C;&#x4E3A;&#x62D3;&#x5C55;&#x540D;&#x3002;</p>
+<p><strong>&#x8003;&#x8651;&#x5230; SCSS &#x8BED;&#x6CD5;&#x5BF9; CSS &#x8BED;&#x6CD5;&#x53CB;&#x597D;&#x7684;&#x517C;&#x5BB9;&#x6027;&#x548C;&#x6269;&#x5C55;&#x6027;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x4F7F;&#x7528; SASS &#x7F16;&#x5199;&#x6837;&#x5F0F;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x7EDF;&#x4E00;&#x4F7F;&#x7528; SCSS &#x8BED;&#x6CD5;</strong></p>
+<h2 id="&#x7F16;&#x7801;&#x683C;&#x5F0F;">&#x7F16;&#x7801;&#x683C;&#x5F0F;</h2>
+<p>&#x4E25;&#x683C;&#x9075;&#x5B88;&#x4E0A;&#x9762; &#x201C;CSS&#x89C4;&#x8303;&#x201D; &#x4E2D;&#x7684; &#x201C;&#x7F16;&#x7801;&#x89C4;&#x8303;&#x201D;</p>
+<h2 id="sass&#x6CE8;&#x91CA;&#x89C4;&#x8303;">SASS&#x6CE8;&#x91CA;&#x89C4;&#x8303;</h2>
+<p>SASS&#x652F;&#x6301; CSS &#x6807;&#x51C6;&#x7684;&#x591A;&#x884C;&#x6CE8;&#x91CA; <code>/* */</code> &#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x652F;&#x6301;&#x5355;&#x884C;&#x6CE8;&#x91CA; <code>//</code> &#x3002;</p>
+<ul>
+<li>&#x591A;&#x884C;&#x6CE8;&#x91CA;&#x5728;&#x4F7F;&#x7528;&#x975E; Compressed &#x6A21;&#x5F0F;&#x8FDB;&#x884C;&#x7F16;&#x8BD1;&#x540E;&#x7684;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x4E2D;&#x4F1A;&#x4FDD;&#x7559;&#x4E0B;&#x6765;&#xFF0C;&#x5355;&#x884C;&#x6CE8;&#x91CA;  <code>//</code> &#x5219;&#x4F1A;&#x88AB;&#x79FB;&#x9664;</li>
+<li>&#x591A;&#x884C;&#x6CE8;&#x91CA;&#x548C;&#x5355;&#x884C;&#x6CE8;&#x91CA;&#x5728; SASS &#x7F16;&#x8BD1;&#x540E;&#x8F93;&#x51FA;&#x7684;&#x538B;&#x7F29; CSS &#x6587;&#x4EF6;&#x90FD;&#x4F1A;&#x88AB;&#x79FB;&#x9664;</li>
+<li>&#x5F53;&#x591A;&#x884C;&#x6CE8;&#x91CA;&#x5185;&#x5BB9;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x662F;&#x611F;&#x53F9;&#x53F7; &#x201C;!&#x201D; &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5373; <code>/*! */</code> &#xFF0C;SASS &#x65E0;&#x8BBA;&#x7528;&#x54EA;&#x4E00;&#x79CD;&#x7F16;&#x8BD1;&#x65B9;&#x5F0F;&#x7F16;&#x8BD1;&#x6CE8;&#x91CA;&#x90FD;&#x4F1A;&#x4FDD;&#x7559;</li>
+<li>&#x6CE8;&#x91CA;&#x5185;&#x5BB9;&#x53EF;&#x4EE5;&#x52A0;&#x5165; SASS &#x53D8;&#x91CF;</li>
+</ul>
+<h3 id="&#x56E2;&#x961F;&#x7EA6;&#x5B9A;">&#x56E2;&#x961F;&#x7EA6;&#x5B9A;</h3>
+<p>SCSS &#x6587;&#x4EF6;&#x5185;</p>
+<ul>
+<li>&#x5168;&#x90E8;&#x9075;&#x5FAA; CSS &#x6CE8;&#x91CA;&#x89C4;&#x8303;</li>
+<li>&#x4E0D;&#x4F7F;&#x7528; /<em>! </em>/ &#x6CE8;&#x91CA;&#x65B9;&#x5F0F;</li>
+<li>&#x6CE8;&#x91CA;&#x5185;&#x4E0D;&#x653E; SASS &#x53D8;&#x91CF;</li>
+</ul>
+<p>&#x6807;&#x51C6;&#x7684;&#x6CE8;&#x91CA;&#x89C4;&#x8303;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-css">@<span class="hljs-keyword">charset</span> <span class="hljs-string">&quot;UTF-8&quot;</span>;
+<span class="hljs-comment">/**
+ * @desc File Info
+ * @author Author Name
+ * @date 2018-02-27
+ */</span>
+
+<span class="hljs-comment">/* Module A
+----------------------------------------------------------------*/</span>
+<span class="hljs-selector-class">.mod-a</span> {}
+
+<span class="hljs-comment">/* module A logo */</span>
+<span class="hljs-selector-class">.mod-a-logo</span> {}
+
+<span class="hljs-comment">/* module A nav */</span>
+<span class="hljs-selector-class">.mod-a-nav</span> {}
+
+
+<span class="hljs-comment">/* Module B
+----------------------------------------------------------------*/</span>
+<span class="hljs-selector-class">.mod-b</span> {}
+
+<span class="hljs-comment">/* module B logo */</span>
+<span class="hljs-selector-class">.mod-b-logo</span> {}
+
+<span class="hljs-comment">/* module B nav */</span>
+<span class="hljs-selector-class">.mod-b-nav</span> {}
+</code></pre>
+<h2 id="&#x5D4C;&#x5957;&#x89C4;&#x8303;">&#x5D4C;&#x5957;&#x89C4;&#x8303;</h2>
+<h3 id="&#x9009;&#x62E9;&#x5668;&#x5D4C;&#x5957;">&#x9009;&#x62E9;&#x5668;&#x5D4C;&#x5957;</h3>
+<pre><code class="lang-scss"><span class="hljs-comment">/* CSS */</span>
+<span class="hljs-selector-class">.max</span> {}
+<span class="hljs-selector-tag">body</span> <span class="hljs-selector-class">.max</span> {}
+
+<span class="hljs-comment">/* SCSS */</span>
+<span class="hljs-selector-class">.max</span> {
+  <span class="hljs-selector-tag">body</span> &amp; {}
+}
+</code></pre>
+<pre><code class="lang-scss"><span class="hljs-comment">/* CSS */</span>
+<span class="hljs-selector-class">.max</span> {}
+<span class="hljs-selector-class">.max-cover</span> {}
+<span class="hljs-selector-class">.max-info</span> {}
+<span class="hljs-selector-class">.max-info-name</span> {}
+
+<span class="hljs-comment">/* SCSS */</span>
+<span class="hljs-selector-class">.max</span> {
+  &amp;-cover {}
+  &amp;-info {
+    &amp;-name {}
+  }
+}
+</code></pre>
+<h3 id="&#x5C5E;&#x6027;&#x5D4C;&#x5957;">&#x5C5E;&#x6027;&#x5D4C;&#x5957;</h3>
+<pre><code class="lang-css"><span class="hljs-comment">/* CSS */</span>
+<span class="hljs-selector-class">.max</span> {
+  <span class="hljs-attribute">background-color</span>: red;
+  <span class="hljs-attribute">background-repeat</span>: no-repeat;
+  <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(/img/icon.png);
+  <span class="hljs-attribute">background-position</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-comment">/* SCSS */</span>
+<span class="hljs-selector-class">.max</span> {
+  <span class="hljs-attribute">background</span>: {
+    color: red;
+    <span class="hljs-attribute">repeat</span>: no-repeat;
+    <span class="hljs-attribute">image</span>: <span class="hljs-built_in">url</span>(/img/icon.png);
+    <span class="hljs-attribute">position</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
+  }
+}
+</code></pre>
+<h2 id="&#x53D8;&#x91CF;">&#x53D8;&#x91CF;</h2>
+<p>&#x53EF;&#x590D;&#x7528;&#x5C5E;&#x6027;&#x5C3D;&#x91CF;&#x62BD;&#x79BB;&#x4E3A;&#x9875;&#x9762;&#x53D8;&#x91CF;&#xFF0C;&#x6613;&#x4E8E;&#x7EDF;&#x4E00;&#x7EF4;&#x62A4;</p>
+<pre><code class="lang-scss"><span class="hljs-comment">// CSS</span>
+<span class="hljs-selector-class">.max</span> {
+  <span class="hljs-attribute">color</span>: red;
+  <span class="hljs-attribute">border-color</span>: red;
+}
+<span class="hljs-comment">// SCSS</span>
+<span class="hljs-variable">$color</span>: red;
+<span class="hljs-selector-class">.max</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$color</span>;
+  <span class="hljs-attribute">border-color</span>: <span class="hljs-variable">$color</span>;
+}
+</code></pre>
+<h2 id="&#x6DF7;&#x5408;mixin">&#x6DF7;&#x5408;(mixin)</h2>
+<p>&#x6839;&#x636E;&#x529F;&#x80FD;&#x5B9A;&#x4E49;&#x6A21;&#x5757;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x5730;&#x65B9;&#x901A;&#x8FC7; <code>@include</code> &#x8C03;&#x7528;&#xFF0C;&#x907F;&#x514D;&#x7F16;&#x7801;&#x65F6;&#x91CD;&#x590D;&#x8F93;&#x5165;&#x4EE3;&#x7801;&#x6BB5;</p>
+<pre><code class="lang-scss"><span class="hljs-comment">// CSS</span>
+<span class="hljs-selector-class">.max-1</span> {
+  -webkit-<span class="hljs-attribute">border-radius</span>: <span class="hljs-number">5px</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">5px</span>;
+}
+<span class="hljs-selector-class">.max-2</span> {
+  -webkit-<span class="hljs-attribute">border-radius</span>: <span class="hljs-number">10px</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">10px</span>;
+}
+
+<span class="hljs-comment">// SCSS</span>
+@<span class="hljs-keyword">mixin</span> radius(<span class="hljs-variable">$radius</span>:<span class="hljs-number">5px</span>) {
+  -webkit-<span class="hljs-attribute">border-radius</span>: <span class="hljs-variable">$radius</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-variable">$radius</span>;
+}
+<span class="hljs-selector-class">.max-1</span> {
+  @<span class="hljs-keyword">include</span> radius; <span class="hljs-comment">//&#x53C2;&#x6570;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x503C;</span>
+}
+<span class="hljs-selector-class">.max-2</span> {
+  @<span class="hljs-keyword">include</span> radius(<span class="hljs-number">10px</span>);
+}
+
+<span class="hljs-comment">// CSS</span>
+<span class="hljs-selector-class">.max-1</span> {
+  <span class="hljs-attribute">background</span>: url(/img/icon.png) no-repeat -<span class="hljs-number">10px</span> <span class="hljs-number">0</span>;
+}
+<span class="hljs-selector-class">.max-2</span> {
+  <span class="hljs-attribute">background</span>: url(/img/icon.png) no-repeat -<span class="hljs-number">20px</span> <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-comment">// SCSS</span>
+@<span class="hljs-keyword">mixin</span> icon(<span class="hljs-variable">$x</span>:<span class="hljs-number">0</span>, <span class="hljs-variable">$y</span>:<span class="hljs-number">0</span>) {
+  <span class="hljs-attribute">background</span>: url(/img/icon.png) no-repeat <span class="hljs-variable">$x</span>, <span class="hljs-variable">$y</span>;
+}
+<span class="hljs-selector-class">.max-1</span> {
+  @<span class="hljs-keyword">include</span> icon(-<span class="hljs-number">10px</span>, 0);
+}
+<span class="hljs-selector-class">.max-2</span> {
+  @<span class="hljs-keyword">include</span> icon(-<span class="hljs-number">20px</span>, 0);
+}
+</code></pre>
+<h2 id="&#x5360;&#x4F4D;&#x9009;&#x62E9;&#x5668;-">&#x5360;&#x4F4D;&#x9009;&#x62E9;&#x5668; %</h2>
+<p>&#x5982;&#x679C;&#x4E0D;&#x8C03;&#x7528;&#x5219;&#x4E0D;&#x4F1A;&#x6709;&#x4EFB;&#x4F55;&#x591A;&#x4F59;&#x7684; css &#x6587;&#x4EF6;&#xFF0C;&#x5360;&#x4F4D;&#x9009;&#x62E9;&#x5668;&#x4EE5; <code>%</code> &#x6807;&#x8BC6;&#x5B9A;&#x4E49;&#xFF0C;&#x901A;&#x8FC7; <code>@extend</code> &#x8C03;&#x7528;</p>
+<pre><code class="lang-scss"><span class="hljs-comment">//scss</span>
+%borderbox {
+  -webkit-<span class="hljs-attribute">box-sizing</span>: border-box;
+  <span class="hljs-attribute">box-sizing</span>: border-box;
+}
+<span class="hljs-selector-class">.max</span> {
+  @<span class="hljs-keyword">extend</span> %borderbox;
+}
+</code></pre>
+<h2 id="extend-&#x7EE7;&#x627F;">extend &#x7EE7;&#x627F;</h2>
+<pre><code class="lang-scss"><span class="hljs-comment">// CSS</span>
+<span class="hljs-selector-class">.max-1</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;
+  <span class="hljs-attribute">color</span>: red;
+}
+<span class="hljs-selector-class">.max-2</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;
+  <span class="hljs-attribute">color</span>: red;
+  <span class="hljs-attribute">font-weight</span>: bold;
+}
+
+<span class="hljs-comment">// SCSS</span>
+<span class="hljs-selector-class">.max-1</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;
+  <span class="hljs-attribute">color</span>: red;
+}
+<span class="hljs-selector-class">.max-2</span> {
+  @<span class="hljs-keyword">extend</span> .max-1;
+  <span class="hljs-attribute">font-weight</span>: bold;
+}
+<span class="hljs-comment">// &#x6216;&#x8005;</span>
+%<span class="hljs-attribute">font</span>-red {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;
+  <span class="hljs-attribute">color</span>: red;
+}
+<span class="hljs-selector-class">.max-1</span> {
+  @<span class="hljs-keyword">extend</span> %font-red;
+}
+<span class="hljs-selector-class">.max-2</span> {
+  @<span class="hljs-keyword">extend</span> %font-red;
+  <span class="hljs-attribute">font-weight</span>: bold;
+}
+</code></pre>
+<h2 id="for-&#x5FAA;&#x73AF;">for &#x5FAA;&#x73AF;</h2>
+<pre><code class="lang-scss"><span class="hljs-comment">// CSS</span>
+<span class="hljs-selector-class">.max-1</span> {<span class="hljs-attribute">background-position</span>: <span class="hljs-number">0</span> -<span class="hljs-number">20px</span>;}
+<span class="hljs-selector-class">.max-2</span> {<span class="hljs-attribute">background-position</span>: <span class="hljs-number">0</span> -<span class="hljs-number">40px</span>;}
+<span class="hljs-selector-class">.max-3</span> {<span class="hljs-attribute">background-position</span>: <span class="hljs-number">0</span> -<span class="hljs-number">60px</span>;}
+
+<span class="hljs-comment">// SCSS</span>
+@<span class="hljs-keyword">for</span> <span class="hljs-variable">$i</span> from 1 through 3 {
+  <span class="hljs-selector-class">.max-</span>#{<span class="hljs-variable">$i</span>} {
+    <span class="hljs-attribute">background-position</span>: <span class="hljs-number">0</span> (-<span class="hljs-number">20px</span>) * <span class="hljs-variable">$i</span>;
+  }
+}
+</code></pre>
+<p>&#x6CE8;&#x610F;&#xFF1A;<code>#{}</code> &#x662F;&#x8FDE;&#x63A5;&#x7B26;&#xFF0C;&#x53D8;&#x91CF;&#x8FDE;&#x63A5;&#x4F7F;&#x7528;&#x65F6;&#x9700;&#x8981;&#x4F9D;&#x8D56;</p>
+<h2 id="each-&#x5FAA;&#x73AF;">each &#x5FAA;&#x73AF;</h2>
+<pre><code class="lang-scss"><span class="hljs-comment">// CSS</span>
+<span class="hljs-selector-class">.max-list</span> {
+  <span class="hljs-attribute">background-image</span>: url(/img/max_list.png);
+}
+<span class="hljs-selector-class">.max-detail</span> {
+  <span class="hljs-attribute">background-image</span>: url(/img/max_detail.png);
+}
+
+<span class="hljs-comment">// SCSS</span>
+@<span class="hljs-keyword">each</span> <span class="hljs-variable">$name</span> in list, detail {
+  <span class="hljs-selector-class">.max-</span>#{<span class="hljs-variable">$name</span>} {
+    <span class="hljs-attribute">background-image</span>: url(/img/max_#{<span class="hljs-variable">$name</span>}.png);
+  }
+}
+
+<span class="hljs-comment">// CSS</span>
+<span class="hljs-selector-class">.max-list</span> {
+  <span class="hljs-attribute">background-image</span>: url(/img/max_list.png);
+  <span class="hljs-attribute">background-color</span>: red;
+}
+<span class="hljs-selector-class">.max-detail</span> {
+  <span class="hljs-attribute">background-image</span>: url(/img/max_detail.png);
+  <span class="hljs-attribute">background-color</span>: blue;
+}
+
+<span class="hljs-comment">// SCSS</span>
+@<span class="hljs-keyword">each</span> <span class="hljs-variable">$name</span>, <span class="hljs-variable">$color</span> in (list, red), (detail, blue) {
+  <span class="hljs-selector-class">.max-</span>#{<span class="hljs-variable">$name</span>} {
+    <span class="hljs-attribute">background-image</span>: url(/img/max_#{<span class="hljs-variable">$name</span>}.png);
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$color</span>;
+  }
+}
+</code></pre>
+<h2 id="function-&#x51FD;&#x6570;">function &#x51FD;&#x6570;</h2>
+<pre><code class="lang-scss">@function pxToRem(<span class="hljs-variable">$px</span>) {
+  @return <span class="hljs-variable">$px</span> / 10px * 1rem;
+}
+<span class="hljs-selector-class">.max</span> {
+  <span class="hljs-attribute">font-size</span>: pxToRem(<span class="hljs-number">12px</span>);
+}
+</code></pre>
+<h2 id="&#x8FD0;&#x7B97;&#x89C4;&#x8303;">&#x8FD0;&#x7B97;&#x89C4;&#x8303;</h2>
+<p>&#x8FD0;&#x7B97;&#x7B26;&#x4E4B;&#x95F4;&#x7A7A;&#x51FA;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;</p>
+<pre><code class="lang-scss"><span class="hljs-selector-class">.max</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span> - <span class="hljs-number">50px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">30px</span> / <span class="hljs-number">5</span>;
+}
+</code></pre>
+<p>&#x6CE8;&#x610F;&#x8FD0;&#x7B97;&#x5355;&#x4F4D;&#xFF0C;&#x5355;&#x4F4D;&#x540C;&#x65F6;&#x53C2;&#x4E0E;&#x8FD0;&#x7B97;&#xFF0C;&#x6240;&#x4EE5; 10px &#x4E0D;&#x7B49;&#x4E8E; 10&#xFF0C;&#x4E58;&#x9664;&#x8FD0;&#x7B97;&#x65F6;&#x9700;&#x8981;&#x7279;&#x522B;&#x6CE8;&#x610F;</p>
+<pre><code class="lang-scss"><span class="hljs-comment">// &#x6B63;&#x786E;&#x7684;&#x8FD0;&#x7B97;&#x683C;&#x5F0F;</span>
+<span class="hljs-selector-class">.max</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span> - <span class="hljs-number">50px</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span> + <span class="hljs-number">50px</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span> * <span class="hljs-number">2</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span> / <span class="hljs-number">2</span>;
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="annotation.html" class="navigation navigation-prev " aria-label="Previous page: 注释规范">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="reset.html" class="navigation navigation-next " aria-label="Next page: 重置样式">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"SASS 规范","level":"1.4.3","depth":2,"next":{"title":"重置样式","level":"1.4.4","depth":2,"path":"css/reset.md","ref":"css/reset.md","articles":[]},"previous":{"title":"注释规范","level":"1.4.2","depth":2,"path":"css/annotation.md","ref":"css/annotation.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"css/sass.md","mtime":"2018-03-06T02:00:47.488Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-06T02:03:11.495Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
